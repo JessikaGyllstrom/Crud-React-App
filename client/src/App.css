@@ -1,0 +1,58 @@
+* {
+  font-family: Roboto, sans-serif;  
+}
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.form { 
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.form input {
+  padding: 10px;
+  margin: 15px 0;
+}
+.employees {
+
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+button {
+  font-size: 15px;
+  height: 34px;
+  margin: 7px 0;
+  border-radius: 5px;
+  border: none;
+}
+.add {
+  background-color: rgb(125, 186, 166);
+}
+.show {
+  background-color: rgb(185, 149, 185);
+}
+.employees {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.employee {
+  width: 650px;
+  height: 30px;
+  border: 1px solid rgb(170, 176, 170);
+  margin: 10px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.employee p {
+  padding: 10px;
+  
+}
