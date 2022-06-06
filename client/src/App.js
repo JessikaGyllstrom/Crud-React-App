@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Axios from "axios";
+import Table from './Table';
 
 function App() {
   const [name, setName] = useState("");
@@ -9,7 +10,7 @@ function App() {
   const [position, setPosition] = useState("");
   const [wage, setWage] = useState("");
   const [employeeList, setEmployeeList] = useState([]);
-
+  
   const addEmployee = () => {
     Axios.post("http://localhost:3001/create", {
       name: name, 
@@ -29,6 +30,7 @@ function App() {
       console.log(response);
     })
   }
+
   return (
     <div className="App">
       <div className='form'>
@@ -54,20 +56,7 @@ function App() {
         }} />
           <button className='button add' onClick={addEmployee}>Add</button>
       </div>
-      <div className='employees'>
-        <button className="show" onClick={getEmployees}>Show Employees</button>
-        {employeeList.map((val, key) => {
-          return ( 
-            <div className="employee" key={key}>
-              <p>Name: {val.name}</p>
-              <p>Age: {val.age}</p>
-              <p>Country: {val.country}</p>
-              <p>Position: {val.position}</p>
-              <p>Wage: {val.wage}</p>
-            </div>
-          );
-        })}
-      </div>
+      <Table />
     </div>
   );
 }

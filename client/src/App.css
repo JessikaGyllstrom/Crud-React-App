@@ -13,12 +13,11 @@
   flex-direction: column;
   width: 40%;
 }
-.form input {
+input {
   padding: 10px;
   margin: 15px 0;
 }
 .employees {
-
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -34,17 +33,18 @@ button {
   background-color: rgb(125, 186, 166);
 }
 .show {
+  width: 100%;
   background-color: rgb(185, 149, 185);
 }
 .employees {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 40%;
 }
 .employee {
   width: 650px;
-  height: 30px;
+  height: auto;
   border: 1px solid rgb(170, 176, 170);
   margin: 10px;
   display: flex;
@@ -54,5 +54,11 @@ button {
 }
 .employee p {
   padding: 10px;
-  
+}
+.operations {
+  display: flex;
+  flex-direction: column;
+}
+.delete {
+  background-color: rgb(182, 82, 82);
 }
